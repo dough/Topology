@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Douglas Harris" />
+  <title>domains</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">domains</h1>
+<p class="author">Douglas Harris</p>
+</header>
+<p>I am going to phrase this all about me trying to make a decision about deciding on some entity from a huge space of entities.</p>
+<p>If we think of trying to find lists of properties that would single out one individual the first step perhaps when we are considering adding a property is to make sure it is consistent with the properties we have added so far.</p>
+<p>And the one thing we had better check first in that process is that we are not inadvertently ruling everyone out; that is exactly saying that the meet of the properties added so far is not empty.</p>
+<p>And that is exactly what the term filter is designed for. Well, actually, that is the term filterbase. But in real life we move betweem the two readily; we can always add in properties implied by those we already have, meaning we can throw in supersets.</p>
+<p>So when we are working with collections of open sets we might as well require that they be filters.</p>
+<p>Among filters it would be nice, when possible, to make sure that a finitary decision process could be eventually used to see if a paricular individual met our specifications. That is expressible by saying that any decision process requires only the consideration of finitely many sets of properties.</p>
+<p>Another way to say it, we will want that every open cover is refined by a finite subcover. That is the definition of a <strong>compact</strong> space.</p>
+<p>One thing about spaces we will wonder - clearly the definition of open cover is that every individual is covered - but if a filter picks out someone from every open cover will there be at least one individual that was selected each time.</p>
+<p>The answer to that question, thank God, is yes!</p>
+<p>PROVE A: If an OF contains a member of every open cover then it converges. That is it encloses (has captured) at least one individual.</p>
+<p>If this theorem were not satisfied then none of the rest of what we do would have much impact.</p>
+<p>Lets go a little farther. We are thinking about decision processes and have decided to use open filters. It will not do any good to look at filters that o not converge, since such a filter could never find anyone! So we concentrate ony on those, and they have another name, they are called join filters. What the name means is that the sslection process of the filter will end up with a set of indiviuals that meet all the criteria, or another words it describes perhaps joins of individuals as well.</p>
+<p>There is a way to describe the kind of set that results.</p>
+<p>PROVE B. J is lmt Op for some JF if and only if when UAi = X then J is enclosed by some Ai.</p>
+<p>In a compact space we can do a little better. The JF associated with an actual process will be prime! That sounds good, except we have not yet defined what it means to be prime!</p>
+<p>DEFINE. A filter is prime if whenever a join of opens belongs to the filter then one of them belongs.</p>
+<p>Restated in the language we have been using, Op PF(X) iff O^p has fcp.</p>
+<p>It will help to think about filters that are not quite prime:</p>
+<p>DEFINE: O^p is f-cauchy if O^p has meets.</p>
+<p>That does not sound better, but:</p>
+<p>FACT: O^p has meets iff O^p has joins.</p>
+<p>And of course the whole point of a compact space is that all we need to check for convergence is finite covers;</p>
+<p>PROVE: In a compact space the JF associated with a convergent filter is prime.</p>
+<p>FACT. A PF converges if and only if it is f-cauchy.</p>
+<p>Move to spec order paper: So what are the PF; they are the lmt-sets of covergent prime filters!</p>
+</body>
+</html>
